@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b77e973708.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <style>
+       
+        </style>
 </head>
 <body>
-<div class="container">
     <header>
         <div class="header-container">
            <ul>
-             <li>My learning journal</li>
-             <li>Home</li>
-             <li>About me</li>
+             <li class="header-col-1"><a href="myLearning.html">My Learning journal</a></li>
+             <div class="header-col-2">
+                 <li  class="home"><a href="index.html">Home</a></li>
+                 <li class="current-page about">About me</li>
+             </div>
+           
            </ul>
         </div>
      </header>
+     <div class="container">
      <section class="about-me-section-one">
         <article class="intro">
-              <h1 class="about-me-title">hi there! My name is Asad And welcome to my learning journal</h1>
-              <p>
-                After several months of learning in the frontend developer career path
-                I'va jumped over to the bootcamp to get expert code reviews of my solo projects 
-                and meet like minded peers
-            </p>
+              <img class="my-image intro-col-1" src="images/asad1.jpg">
+              <div class="intro-col-2">
+                <h1 class="about-me-title">hi there! My name is Asad And welcome to my learning journal</h1>
+                <p class="about-me-subtitle">
+                  After several months of learning in the frontend developer career path
+                  I'va jumped over to the bootcamp to get expert code reviews of my solo projects 
+                  and meet like minded peers
+              </p>
+              </div>
+             
         </article>
      </section>
      <section class="about-me-section-two">
-        <article>
-            <article>
+       
+            <article class="article-body-about-me">
                 <div>
                    <h2>How I stay commited to learning</h2>
                    <p>I like to think of my self as a life long learner,
@@ -59,35 +69,44 @@
                       summarisess helped others to learn As well and get motivated
                    </p>
                 </div>
+                <h1 style="text-align:center;margin-bottom: 0.8em;">Recent posts</h1>
            </article>
-        </article>
      </section>
-     <section class="about-me-section-three">
-        <article>
-            <img src="">
-            <p>july 23,2022</p>
-            <h2>Blog one</h2>
-            <p>I'm excited to start a new journey as scrimba
-                 bootcamp student!After several months of learning 
-                 in front end developer career path</p>
+     <section class="home-section-two"> 
+        <article class="recent-posts home-article">
+               <img src="images/pexels-pixabay-207756.jpg">
+               <p class="date-article">july 22,2023</p>
+               <h2>Bolg one</h2>
+               <p>
+                 I'm excited to start a new learning journey as a Scrimba Bootcamp 
+                 student! After several months of learning in the Frontend Developer Career Path.
+               </p>
         </article>
-        <article>
-            <img src="">
-            <p>july 23,2022</p>
-            <h2>Blog two</h2>
-            <p>I'm excited to start a new journey as scrimba
-                 bootcamp student!After several months of learning 
-                 in front end developer career path</p>
+        <article class="home-article">
+         <img src="images/pexels-pixabay-207756.jpg">
+         <p class="date-article">july 22,2023</p>
+         <h2>Bolg two</h2>
+         <p>
+           I'm excited to start a new learning journey as a Scrimba Bootcamp 
+           student! After several months of learning in the Frontend Developer Career Path.
+         </p>
         </article>
-        <article>
-            <img src="">
-            <p>july 23,2022</p>
-            <h2>Blog three</h2>
-            <p>I'm excited to start a new journey as scrimba
-                 bootcamp student!After several months of learning 
-                 in front end developer career path</p>
-        </article>      
-     </section>
+        <article  class="home-article">
+         <img src="images/pexels-pixabay-207756.jpg">
+         <p class="date-article">july 22,2023</p>
+         <h2>Bolg three</h2>
+         <p>
+           I'm excited to start a new learning journey as a Scrimba Bootcamp 
+           student! After several months of learning in the Frontend Developer Career Path.
+         </p>
+        </article>
+      </section>
+    </div>
+    <div class="footer-container">
+        <footer>
+            <p>My learning journal</p>
+            <p>Copyright&copy;2022</p>
+        </footer>
     </div>
 </body>
 </html>

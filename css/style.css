@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,200;1,300;1,400&display=swap');
+
 body{
     padding: 0;
     margin: 0;
@@ -11,10 +14,23 @@ typography header
 ....................
 
 */
+.current-page{
+    border-bottom: 3px solid grey;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
  .container{
-max-width: 900px;
-margin: 0 auto;
+    width: 93%;
+    max-width: 900px;
+    margin: 0 auto;
 } 
+.container-learning-page{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 900px;
+}
 header{
     background-color: whitesmoke;
     color: #0E0E0E;
@@ -24,7 +40,7 @@ header{
     line-height: 108.2%;
     letter-spacing: -0.03em;
      padding: 1em; 
-    margin-bottom: 0;
+     margin-bottom: 0;
 }
 /* 
 ....................
@@ -116,23 +132,73 @@ h2{
  margin-bottom: 0;
 }
 .home-section-two{
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
 }
+
+.mylearning-section-one{
+display: flex;
+flex-direction: column;
+}
+footer{
+    background-color: #202020;
+    color: #D7D7D7;
+    text-align: center;
+    padding: 1.5em 0;
+}
+footer p{
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+/* about-me typography */
+.about-me-title{
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 34.8381px;
+line-height: 108.2%;
+letter-spacing: -0.03em;
+color: #151515;
+margin-top: 0.5em;
+margin-bottom: 0;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-style: normal; */
+    /* font-weight: 200; */
+    font-size: 1rem;
+    line-height: 25px;
+}
+/* about me page layout */
+.my-image{
+    border-radius: 50%;
+    height: 60%;
+    width: 60%;
+    border: 1px solid black;
+    margin-top: 1.5em;
+
+}
+
 @media (min-width:550px){
     .home-section-two{
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    article{
-        width: 30%;  
+    .home-article{
+        width: 30%; 
     }
+
     img{
         min-height:30vh;
         object-fit: cover;
     }
+    .main-img{
+        height: 60vh;
+    }
     .container{
-        max-width: 1100px;
+        max-width: 1200px;
     }
     .home-section-one{
         padding-top: 7em;
@@ -157,4 +223,73 @@ h2{
         font-size: 1.2rem;
         letter-spacing: 2px;
     }
+/* 
+layput learning page
+*/
+    .mylearning-section-one-padding{
+        padding: 0 2em;
+    }
+    p{
+        color: #151515;
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+    h1{
+       margin-bottom: 0; 
+       margin-top: 0.4em;
+       font-family: 'Source Sans Pro';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 108.2%;
+       letter-spacing: -0.03em;
+       color: #151515;
+    }
+    h2{       
+       font-family: 'Source Sans Pro';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 24px;
+       line-height: 30px;
+       color: #151515;
+    }
+    .date{
+        margin-bottom: 0;
+        margin-top: 2em;
+    }
+ footer p{
+    color: #D7D7D7;
+    font-size: 1.5rem;
+ }
+ /* 
+ layout about-me-page
+ */
+ .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+ }
+ .my-image{
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 1.5em;
+    object-fit: cover;
 }
+.intro-col-1{
+    /* height:20vh; */
+    width: 20%;
+}
+.intro-col-2{
+    width: 76%;
+}
+.about-me-title{
+    font-size: 2.3rem;
+}
+.article-body-about-me{
+    padding-top: 2.5em;
+    padding-left: 4.5em;
+}
+}
+/* End of media query */
